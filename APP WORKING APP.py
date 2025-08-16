@@ -4,14 +4,12 @@ import pandas as pd
 from datetime import datetime
 import json
 
-st.set_page_config(page_title="NBA Tagger (Streamlit)", layout="wide")
+st.set_page_config(page_title="StFx MBB Tagger (Streamlit)", layout="wide")
 
 # ---------- Session State Init ----------
 if "buttons" not in st.session_state:
     st.session_state.buttons = [
         {"label": "Pick and Roll", "color": "#3f51b5"},
-        {"label": "Rebound", "color": "#009688"},
-        {"label": "Turnover", "color": "#e53935"},
     ]
 
 if "events" not in st.session_state:
